@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+</head>
+<body>
+    <?php
+      echo '<h1> view: index.phtml </h1>';
+      echo '<ul>';
+      foreach($dados as $dado){
+        echo '<li>';
+        // echo $indice.' - '.$valor;
+        echo $dado['dados'];
+        echo '</li>';
+      }
+      echo '</ul>';
+    ?>
+</body>
+</html>
