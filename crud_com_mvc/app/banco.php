@@ -4,7 +4,7 @@ namespace App;
 
 class Banco
 {
-    private static $dbNome = 'testemvc';
+    private static $dbNome = 'db_aulaPHP';
     private static $dbHost = 'localhost';
     private static $dbUsuario = 'root';
     private static $dbSenha = '';

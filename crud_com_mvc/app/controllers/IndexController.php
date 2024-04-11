@@ -3,7 +3,7 @@
     namespace App\controllers;
 
     // use App\Banco;
-    use App\models\Modelo1;
+    use App\models\UsuarioModel;
 
     class IndexController {
 
@@ -13,10 +13,10 @@
             // $db = Banco::conectar();
 
             echo 'Controler: IndexController - Acao: index() <br>';
-            $modelo1 = new Modelo1;
+            $usuarios = new UsuarioModel();
             // $dados = array('dado1','dado2','dado3','dado4');
-            $dados = $modelo1->getDados();
-            require_once '..\app\views\index.phtml';
+            $dados = $usuarios->getDados();
+            require_once '..\app\views\indexUsuario.phtml';
     
         }
     
