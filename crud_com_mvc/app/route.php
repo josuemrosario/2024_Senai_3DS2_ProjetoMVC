@@ -20,7 +20,13 @@
                 'route' =>  '/',
                 'controller' => 'IndexController',
                 'action' => 'index'
-            );             
+            );     
+            
+            $this->routes['create'] = array(
+                'route' =>  '/create',
+                'controller' => 'IndexController',
+                'action' => 'create'
+            ); 
 
         }
 

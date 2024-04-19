@@ -12,13 +12,13 @@
         <div class="container">
           <div class="jumbotron">
             <div class="row">
-                <h2>CRUD em PHP <span class="badge badge-secondary">v 1.0.0 Glaucia</span></h2>
+                <h2>CRUD em PHP <span class="badge badge-secondary">v 1.0.0 Senai</span></h2>
             </div>
           </div>
             </br>
             <div class="row">
                 <p>
-                    <a href="create.php" class="btn btn-success">Adicionar</a>
+                    <a href="/create" class="btn btn-success">Adicionar</a>
                 </p>
                 <table class="table table-striped">
                     <thead>
@@ -48,11 +48,11 @@
                             echo '<td>'. $row['email'] . '</td>';
                             echo '<td>'. $row['sexo'] . '</td>';
                             echo '<td width=250>';
-                            echo '<a class="btn btn-primary" href="read.php?id='.$row['id'].'">Info</a>';
+                            echo '<a class="btn btn-primary" href="/read?id='.$row['id'].'">Info</a>';
                             echo ' ';
-                            echo '<a class="btn btn-warning" href="update.php?id='.$row['id'].'">Atualizar</a>';
+                            echo '<a class="btn btn-warning" href="/update?id='.$row['id'].'">Atualizar</a>';
                             echo ' ';
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$row['id'].'">Excluir</a>';
+                            echo '<a class="btn btn-danger" href="/delete?id='.$row['id'].'">Excluir</a>';
                             echo '</td>';
                             echo '</tr>';
                         }
